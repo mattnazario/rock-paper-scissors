@@ -6,37 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header">WARRIOR. ARCHER. WIZARD.</div>
+    <div class="header">
+        <div class="rock">ROCK.</div>
+        <div class="paper">PAPER.</div>
+        <div class="scissors">SCISSORS.</div>
+    </div>
+
     <div class="game-ui">
-        <div class="rock">
-            <img src="#" id="rock-icon" alt="a rock">
-            <button class="btn"></button>    
+        <div class="selection">
+            <img src="https://images.pexels.com/photos/2363901/pexels-photo-2363901.jpeg?auto=compress&cs=tinysrgb&w=300" class="icon" alt="a rock">
+            <button class="btn">ROCK</button>    
         </div>
 
-        <div class="paper">
-            <img src="#" id="paper-icon" alt="a piece of paper">
-            <button class="btn"></button>    
+        <div class="selection">
+            <img src="https://images.pexels.com/photos/2575363/pexels-photo-2575363.jpeg?auto=compress&cs=tinysrgb&w=300" class="icon" alt="a piece of paper">
+            <button class="btn">PAPER</button>    
         </div>
 
-        <div class="scissors">
-            <img src="#" id="scissors-icon" alt="scissors">
-            <button class="btn"></button>    
+        <div class="selection">
+            <img src="https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=300" class="icon" alt="scissors">
+            <button class="btn">SCISSORS</button>    
         </div>        
     </div>
     <div class="game-console">
-        <img src="#" id="computer-choice-icon">
+        <img src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg" id="computer-choice-icon" class="icon">
         <div id="computer-text"></div>
         <div class="point-section">
-            <div id="player-points">PLAYER POINTS: </div>
-            <div id="computer-points">COMPUTER POINTS: </div>
+            <div id="player-points">PLAYER POINTS: <strong id="player-score">0</strong></div>
+            <div id="computer-points">COMPUTER POINTS: <strong id="computer-score">0</strong></div>
         </div>
+        <button class="btn" id="reset">RESET</button>
         
     </div>
     <div class="footer">
-        <img src="#">
-        <p>WORKED ON FOR THE ODIN PROJECT</p>
+        <img src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg">
+        <p>WORKED ON AS PART OF THE ODIN PROJECT</p>
     </div>
+
+     
+    
+    
+    
+
 </body>
 </html>
