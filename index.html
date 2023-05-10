@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./scripts/script.js"></script>
+    <title>Rock,Paper,Scissors</title>
+    <script src="./scripts/script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,20 +18,22 @@
     <div class="game-ui">
         <div class="selection">
             <img src="https://images.pexels.com/photos/2363901/pexels-photo-2363901.jpeg?auto=compress&cs=tinysrgb&w=300" class="icon" alt="a rock">
-            <button class="btn">ROCK</button>    
+            <button class="btn" id="rock">ROCK</button>    
         </div>
 
         <div class="selection">
             <img src="https://images.pexels.com/photos/2575363/pexels-photo-2575363.jpeg?auto=compress&cs=tinysrgb&w=300" class="icon" alt="a piece of paper">
-            <button class="btn">PAPER</button>    
+            <button class="btn" id="paper">PAPER</button>    
         </div>
 
         <div class="selection">
             <img src="https://images.pexels.com/photos/4226896/pexels-photo-4226896.jpeg?auto=compress&cs=tinysrgb&w=300" class="icon" alt="scissors">
-            <button class="btn">SCISSORS</button>    
+            <button class="btn" id="scissors">SCISSORS</button>    
         </div>        
     </div>
     <div class="game-console">
+        <div id="player-choice-text"></div>
+        <div id="computer-choice-text"></div>
         <img src="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg" id="computer-choice-icon" class="icon">
         <div id="computer-text"></div>
         <div class="point-section">
